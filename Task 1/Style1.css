@@ -1,0 +1,309 @@
+:root {
+    --normal-font: 400;
+    --bold-font: 600;
+    --bolder-font: 900;
+    --line-height: 1.7rem;
+    --transition: 0.4s ease-in;
+  }
+  
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: var(--transition);
+}
+section{
+  padding:2rem 9%;
+}
+body{
+    font-family: "Roboto", sans-serif;
+  
+}
+.home{
+  background: url(../Task\ 1/Images/Main.jpg) no-repeat ;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-position: center;
+}
+a{
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 #020202;
+  color: #000000;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  
+  a:hover {
+    box-shadow: inset 300px 0 0 0 #f0e1f3;
+    color: rgb(0, 0, 0);
+  } 
+ 
+  ul li {
+    list-style-type: none;
+  }
+  .Jewels {
+    color: hsl(308, 81%, 10%);
+    font-family:Brush Sc
+  }
+  .Jewels {
+    color: hsl(308, 81%, 10%);
+    font-family:Brush Sc;
+  }
+  .dot {
+    color: hsl(307, 80%, 46%);
+    padding-left: 0;
+    font-family:Brush Sc;
+  }
+  nav {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 3px 2px #e8d5e1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  .hamburger {  
+    display: none;
+  }
+  .logo {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin-left: 2rem;
+    font-weight: var(--bold-font);
+    font-family: Brush Sc;
+  }
+  .fas fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor:pointer;
+    border: .1rem solid rgba(0, 0, 0, .3) ;
+    display: none;
+  }
+div.Intro{
+  max-width: 1100px;
+  margin:10rem auto -6rem;
+  margin-left: 3rem;
+color:#fdfbfd;
+font-weight: var(--bolder-font);
+    font-family: Brush Sc;
+    font-size: 30px;
+  }
+  a.btn, .btn{
+    margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 0.6rem;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  color: #050505;
+  background-color: #ffffff;
+  font-family:Brush Sc;
+  font-size: 25px;
+  }
+  /*.about {
+    position: relative;
+    background: url("../images/jab-transformed.png") no-repeat top center/cover;
+    height: 600px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    min-height: 100vh;
+  }*/
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #faf5fa;
+  }
+  .content {
+    font-size: 20px;
+    padding-left: 15px;
+  }
+  .content h1, p{
+    text-align: center;
+    font-family:Brush Sc;
+    margin-right: 1.5rem;
+  }
+  .image{
+    max-height: 100vh;
+  }
+  a.btn2{
+    margin-left: 10rem;
+    margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 0.6rem;
+  border:#e8d6e7;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  color: #050505;
+  background-color: #ffffff;
+  font-family:Brush Sc;
+  font-size: 25px;
+  font-weight: bold;
+  }
+.products .box-container{
+display: flex;
+flex-wrap: wrap;
+gap:1.5rem;
+  }
+.products .box-container .box{
+  flex:1 1 30rem; /*what is that*/
+  box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+  border-radius: .5rem;
+  border: .11rem solid rgba(0, 0, 0, .1);
+  position: relative;
+}
+.products .box-container .box .discount{
+  position: absolute;
+  top:1rem;
+  left:1rem;
+  padding: .7rem 1rem;
+  font-size: 1rem;
+color:var(--pink);
+background: rgb(255,51,153,.05);
+z-index:1;
+border-radius:.5rem;
+} 
+.products .box-container .box .image{
+  position: relative;
+  text-align: center;
+  padding-top: 2rem;
+  overflow: hidden;
+}
+.products .box-container .box .image img{
+  height: 25rem;
+
+}
+.products .box-container .box:hover .image img{
+  transform: scale(1.1);
+}
+.products .box-container .box .image .icons{
+  position: absolute;
+  bottom:0rem; left:0; right:0;
+  display: flex;
+}
+
+.products .box-container .box:hover .image .icons a{
+bottom:0;
+}
+.products .box-container .box .image .icons a{
+  height:5rem;
+  line-height: 4rem ;
+  font-size: 2rem;
+  width:50%;
+  background: var(--pink);
+  color:#ffffff;
+}
+.products .box-container .box .image .icons .cart-btn{
+  border-left: solid #fff7;
+  border-right: solid #fff7;
+  width:27%
+}
+.products h1{
+  text-align: center;
+  font-family: Brush Sc;
+  font-weight: bold;
+  align-items: center;
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+.products .box-container .box .image .icons a:hover{
+  background: #333;
+}
+.products .box-container .box .contentt{
+  padding: 2rem;
+  text-align: center;
+}
+.products .box-container .box .contentt h3{
+  font-size:2rem;
+  color:#333;
+}
+.contact{
+  height: 800px;
+  background-color: rgb(249, 242, 248);
+}
+.contact h1{
+  text-align: center;
+  font-family: Brush Sc;
+  font-weight: bold;
+  align-items: center;
+  font-size: 40px;
+  margin-bottom: 2rem;
+  margin-top: 0rem;
+  top: -20px;
+}
+.contact .row{
+ display:flex;
+ flex-wrap:wrap;
+ gap:0rem;
+ padding-top: 0rem;
+ padding-bottom: 20rem;
+ padding-right: 10rem;
+ padding-left: 10rem;
+ height: 100px;
+}
+.contact .row .btn{
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 0.6rem;
+  border:#333;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  background-color: #ded6dd;
+  font-family:Brush Sc;
+  font-size: 25px;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #020202;
+color: #000000;
+transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.contact .row .btn:hover{
+  box-shadow: inset 300px 0 0 0 #f0e1f3;
+  color: rgb(0, 0, 0);
+}
+.contact .row form .box{
+  padding:1rem;
+  font-size: 1.7rem;
+  color: #333;
+  text-transform: none;
+  border:.1rem solid rgba(0,0,0,.1);
+  border-radius: .5rem;
+  margin:.7rem 0;
+  width:100%;
+}
+.contact .row form .box:focus{
+  border-color: var(--pink);
+}
+.contact .row form textarea{
+  height: 15rem;
+  resize: none;
+}
+.contact .row form{
+  flex:1 1 40rem;
+  padding:2rem 2.5rem;
+  box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+  border:.1rem solid rgba(0,0,0,.1);
+  background: #fff;
+border-radius: .5rem;
+}
